@@ -1,14 +1,7 @@
-import React, { useState } from "react";
+import React from 'react';
 
-function InputWithSearch(props){
-    const [loc,setLoc]=useState('');
-    return(
-        <div className="main">
-            <input list="data" onChange={(e)=>setLoc(e.target.value)} placeholder="Search" style={{ height: "30px", width: "20%"}} />
-            <datalist id="data">
-                {props.data.map((op)=><option key={op.id}>{op.name}</option>)}
-            </datalist>
-        </div>
-    );
+export default function Search() {
+  return (
+    <div>Search</div>
+  );
 }
-export default InputWithSearch;

@@ -1,19 +1,20 @@
 import React from 'react';
 
 //Importing Material UI Components
-import { TextField, Stack, Autocomplete } from '@mui/material';
+import { TextField, Autocomplete } from '@mui/material';
 
-export default function FilterLocation({ locations }) {
+export default function FilterLocation({ locations, setLocation }) {
   return (
     <Autocomplete
-     freeSolo
-     id="free-solo-2-demo"
      disableClearable
+     onChange={(event, newValue) => {
+        setLocation(newValue);
+     }}
      options={locations.map((option) => option)}
      renderInput={(params) => (
             <TextField
                 {...params}
-                label="Search input"
+                label="Location"
                 InputProps={{...params.InputProps, type: 'search',}}/>
         )}
     />

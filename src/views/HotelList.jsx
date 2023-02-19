@@ -1,3 +1,4 @@
+import { Grid } from '@mui/material';
 import { useState, useEffect } from 'react';
 
 //Importing Custom Components
@@ -21,12 +22,14 @@ export default function HotelList({ filteredDataIds, submit }) {
   }, [filteredDataIds, submit]);
   
   return (
-      <>
+      <Grid container item xs={12} alignItems="center" justify="center" sx={{flexDirection: { xs: "column", sm: "column", md: "row"}, paddingTop: '2vh'}}>
+
       {submit && filteredDataIds.length > 0 ? (
         <Cards details={filteredCardsData} />
         ) : submit && filteredDataIds.length === 0 ? (
         <h1>No Result Found</h1>
         ) : (<Cards details={data} />)}
-      </>
+        
+      </Grid>
   );
 }

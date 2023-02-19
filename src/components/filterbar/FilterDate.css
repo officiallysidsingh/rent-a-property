@@ -1,0 +1,5 @@
+.react-datepicker__input-container input{
+    height: 8.5vh;
+    background-color: transparent;
+    border: none;
+  }

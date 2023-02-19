@@ -1,3 +1,4 @@
+//Importing Hooks
 import { useState } from 'react';
 
 //Importing Custom Components
@@ -5,6 +6,9 @@ import FilterLocation from './FilterLocation.jsx';
 import FilterDate from './FilterDate.jsx';
 import FilterPrice from './FilterPrice.jsx';
 import FilterType from './FilterType.jsx';
+
+//Importing Material UI Components
+import { Grid } from '@mui/material';
 
 //Importing Hotel Data
 import { data } from '../../constants/data.js';
@@ -14,7 +18,7 @@ export default function FilterBar({ setFilteredDataIds, setSubmit }) {
   //Handling Filter States
   const [location, setLocation] = useState('London, UK');
   const [date, setDate] = useState(null);
-  const [price, setPrice] = useState('');
+  const [price, setPrice] = useState([500, 3000]);
   const [type, setType] = useState('');
 
   //To generate unique "Property Type" data for dropdown filtering
@@ -52,7 +56,7 @@ export default function FilterBar({ setFilteredDataIds, setSubmit }) {
 
         if(date !== null && price !== '' && type !== ''){
           const itemDate = new Date(item.date);
-          if(item.type === type && item.price <= price && itemDate <= new Date(formatDate(date))){
+          if(item.type === type && item.price >= price[0] && item.price <= price[1] && itemDate <= new Date(formatDate(date))){
               return item;
             }
         }
@@ -61,7 +65,7 @@ export default function FilterBar({ setFilteredDataIds, setSubmit }) {
 
         else if(date !== null && price !== '' && type === ''){
           const itemDate = new Date(item.date);
-          if(itemDate <= new Date(formatDate(date)) && item.price <= price){
+          if(itemDate <= new Date(formatDate(date)) && item.price >= price[0] && item.price <= price[1]){
             return item;
           }
         }
@@ -78,7 +82,7 @@ export default function FilterBar({ setFilteredDataIds, setSubmit }) {
         //If Price and Property Type filter is applied
 
         else if(price !== '' && type !== '' && date === null){
-          if (item.price <= price && item.type === type) {
+          if (item.price >= price[0] && item.price <= price[1] && item.type === type) {
             return item;
           }
         }
@@ -94,7 +98,7 @@ export default function FilterBar({ setFilteredDataIds, setSubmit }) {
         //If only Price filter is applied
 
         else if(date === null && type === '' && price !== ''){
-          if (item.price <= price) {
+          if (item.price >= price[0] && item.price <= price[1]) {
             return item;
           }
         }
@@ -131,11 +135,27 @@ export default function FilterBar({ setFilteredDataIds, setSubmit }) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <FilterLocation locations={generateLocationDataForAutocomplete()} location={location} setLocation={setLocation} />
-      <FilterDate date={date} setDate={setDate} />
-      <FilterPrice />
-      <FilterType types={generateTypeDataForDropdown()} type={type} setType={setType} />
-      <button type="submit">Search</button>
+      <Grid container spacing={2} sx={{flexDirection: { xs: "column", sm: "column", md: "row"}, alignItems: 'center', justifyContent: 'center' }}>
+        <Grid item xs={3}>
+          <FilterLocation locations={generateLocationDataForAutocomplete()} location={location} setLocation={setLocation} />
+        </Grid>
+
+        <Grid item xs={3}>
+          <FilterDate date={date} setDate={setDate} />
+        </Grid>
+
+        <Grid item xs={2}>
+          <FilterPrice price={price} setPrice={setPrice} />
+        </Grid>
+
+        <Grid item xs={3}>
+          <FilterType types={generateTypeDataForDropdown()} type={type} setType={setType} />
+        </Grid>
+
+        <Grid item xs={1}>
+          <button type="submit" style={{height: '6vh', width: '4vw', background: '#7065ef', border: 'none', borderRadius: '10%'}}>Search</button>
+        </Grid>
+      </Grid>
     </form>
   );
 }

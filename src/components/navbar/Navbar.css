@@ -1,0 +1,79 @@
+/* For setting padding of navbar elements */
+.navbar-paper{
+    padding: 0px 81px 0px 96px;
+    color: #404040;
+}
+
+/* For styling education, projects, experience etc links on navbar */
+
+li{
+    list-style: none;
+    display: inline-flex;
+    padding: 0 15px;
+}
+
+/* For all link tags */
+
+a{
+    text-decoration: none;
+}
+
+/* For link tags other than logo tag applied on Link Components */
+
+a .nav{
+    font-size: 1.4rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    transition: 0.3s ease-in-out;
+}
+h2{
+    color: #666876;
+}
+
+a .nav:hover{
+    color: #af91db;
+    cursor: pointer;
+}
+
+/* Fonts for logo(dark mode as well as light mode)*/
+@font-face {
+    font-family: "Logo-font-dark";
+    src: url(../fonts/Agutina.otf);
+}
+
+/* For changes in logo dark and light mode */
+
+.logo-light{
+    font-family: "Logo-font-light";
+    color: #404040;
+    font-size: 5vw;
+}
+
+.logo-dark{
+    font-family: "Logo-font-dark";
+    color: #05d9a1;
+    font-size: 3rem;
+    padding-top: 3vh;
+}
+
+@font-face {
+    font-family: "Logo-font-light";
+    src: url(../fonts/Poster.otf);
+}
+
+/* Tab Compatibility */
+
+@media screen and (max-width: 885px){
+    .close{
+        display: none;
+    }
+    
+    li{
+        margin-bottom: 25px;
+    }
+
+    nav{
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}

@@ -9,7 +9,7 @@ import HotelList from './views/HotelList.jsx';
 import { Container } from '@mui/material';
 
 function App() {
-  
+
   //Handling Whole App State
   const [filteredDataIds, setFilteredDataIds] = useState([]);
   const[submit, setSubmit] = useState(false);
@@ -17,11 +17,17 @@ function App() {
   return (
     <>
       <Navbar />
-      <Container>
+      <Container maxWidth="lg" sx={{paddingBottom: '4vh', paddingTop: '2vh'}}>
+        <h1>Search properties to rent</h1>
+      </Container>
+
+      <Container maxWidth="lg" sx={{background: '#ffffff', paddingBottom: '2vh', borderRadius: '10px', boxShadow: '1px 12px 23px -12px rgba(0,0,0,0.75)' }}>
         <FilterBar setFilteredDataIds={setFilteredDataIds} setSubmit={setSubmit} />
-        <h1>{filteredDataIds}</h1>
+      </Container>
+      <Container maxWidth="md">
         <HotelList filteredDataIds={filteredDataIds} submit={submit} />
       </Container>
+      
     </>
   );
 }

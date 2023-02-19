@@ -1,6 +1,14 @@
+import sampleproperty1 from "../assets/sampleproperty1.jpg";
+import sampleproperty2 from "../assets/sampleproperty2.jpg";
+import sampleproperty3 from "../assets/sampleproperty3.jpg";
+import sampleproperty4 from "../assets/sampleproperty4.jpg";
+import sampleproperty5 from "../assets/sampleproperty5.jpg";
+import sampleproperty6 from "../assets/sampleproperty6.jpg";
+
 export const data = [
  {
   id: 1,
+  image: sampleproperty1,
   location: "London, UK",
   date: "2023-03-01",
   price: 800,
@@ -9,6 +17,7 @@ export const data = [
  },
  {
   id: 2,
+  image: sampleproperty2,
   location: "Paris, France",
   date: "2023-04-15",
   price: 1500,
@@ -17,6 +26,7 @@ export const data = [
  },
  {
   id: 3,
+  image: sampleproperty3,
   location: "New York City, USA",
   date: "2023-05-10",
   price: 2500,
@@ -25,6 +35,7 @@ export const data = [
  },
  {
   id: 4,
+  image: sampleproperty4,
   location: "Sydney, Australia",
   date: "2023-06-20",
   price: 1000,
@@ -32,6 +43,7 @@ export const data = [
   type: "House"
  },
  {
+  image: sampleproperty5,
   id: 5,
   location: "Tokyo, Japan",
   date: "2023-07-08",
@@ -40,6 +52,7 @@ export const data = [
   type: "Apartment"
  },
  {
+  image: sampleproperty6,
   id: 6,
   location: "Cape Town, South Africa",
   date: "2023-08-15",
@@ -49,6 +62,7 @@ export const data = [
  },
  {
   id: 7,
+  image: sampleproperty1,
   location: "Rio de Janeiro, Brazil",
   date: "2023-09-01",
   price: 900,
@@ -57,6 +71,7 @@ export const data = [
  },
  {
   id: 8,
+  image: sampleproperty2,
   location: "Dubai, UAE",
   date: "2023-10-12",
   price: 3000,
@@ -65,6 +80,7 @@ export const data = [
  },
  {
   id: 9,
+  image: sampleproperty3,
   location: "Barcelona, Spain",
   date: "2023-11-22",
   price: 1100,
@@ -73,6 +89,7 @@ export const data = [
  },
  {
   id: 10,
+  image: sampleproperty4,
   location: "Rome, Italy",
   date: "2023-12-05",
   price: 1700,
@@ -81,6 +98,7 @@ export const data = [
  },
  {
   id: 11,
+  image: sampleproperty5,
   location: "Vancouver, Canada",
   date: "2023-01-10",
   price: 700,
@@ -89,6 +107,7 @@ export const data = [
  },
  {
   id: 12,
+  image: sampleproperty6,
   location: "Auckland, New Zealand",
   date: "2023-02-15",
   price: 500,
@@ -97,6 +116,7 @@ export const data = [
  },
  {
   id: 13,
+  image: sampleproperty1,
   location: "Moscow, Russia",
   date: "2023-03-20",
   price: 1200,
@@ -105,6 +125,7 @@ export const data = [
  },
  {
   id: 14,
+  image: sampleproperty2,
   location: "Buenos Aires, Argentina",
   date: "2023-04-05",
   price: 600,
@@ -113,6 +134,7 @@ export const data = [
  },
  {
   id: 15,
+  image: sampleproperty3,
   location: "Bangkok, Thailand",
   date: "2023-05-12",
   price: 300,
@@ -121,6 +143,7 @@ export const data = [
  },
  {
   id: 16,
+  image: sampleproperty4,
   location: "Barcelona, Spain",
   date: "2023-06-18",
   price: 950,
@@ -129,6 +152,7 @@ export const data = [
  },
  {
   id: 17,
+  image: sampleproperty5,
   location: "Berlin, Germany",
   date: "2023-07-01",
   price: 800,
@@ -137,6 +161,7 @@ export const data = [
  },
  {
   id: 18,
+  image: sampleproperty6,
   location: "Cancun, Mexico",
   date: "2023-08-09",
   price: 2500,
@@ -145,6 +170,7 @@ export const data = [
  },
  {
   id: 19,
+  image: sampleproperty1,
   location: "Casablanca, Morocco",
   date: "2023-09-22",
   price: 800,
@@ -153,6 +179,7 @@ export const data = [
  },
  {
   id: 20,
+  image: sampleproperty2,
   location: "Amsterdam, Netherlands",
   date: "2023-10-14",
   price: 1100,
@@ -161,6 +188,7 @@ export const data = [
  },
  {
   id: 21,
+  image: sampleproperty3,
   location: "Honolulu, USA",
   date: "2023-11-19",
   price: 2200,
@@ -169,6 +197,7 @@ export const data = [
  },
  {
   id: 22,
+  image: sampleproperty4,
   location: "Sydney, Australia",
   date: "2023-12-03",
   price: 2000,
@@ -177,6 +206,7 @@ export const data = [
  },
  {
   id: 23,
+  image: sampleproperty5,
   location: "Rio de Janeiro, Brazil",
   date: "2023-01-10",
   price: 550,
@@ -185,6 +215,7 @@ export const data = [
  },
  {
   id: 24,
+  image: sampleproperty6,
   location: "Hong Kong, China",
   date: "2023-02-14",
   price: 1500,
@@ -193,6 +224,7 @@ export const data = [
  },
  {
   id: 25,
+  image: sampleproperty1,
   location: "Jerusalem, Israel",
   date: "2023-03-19",
   price: 900,
@@ -201,6 +233,7 @@ export const data = [
  },
  {
   id: 26,
+  image: sampleproperty2,
   location: "Tulum, Mexico",
   date: "2023-04-07",
   price: 1200,
@@ -209,6 +242,7 @@ export const data = [
  },
  {
   id: 27,
+  image: sampleproperty3,
   location: "Maui, USA",
   date: "2023-05-22",
   price: 1800,
@@ -217,6 +251,7 @@ export const data = [
  },
  {
   id: 28,
+  image: sampleproperty4,
   location: "Edinburgh, UK",
   date: "2023-06-16",
   price: 900,
@@ -225,6 +260,7 @@ export const data = [
  },
  {
   id: 29,
+  image: sampleproperty5,
   location: "Phuket, Thailand",
   date: "2023-07-25",
   price: 3000,
@@ -233,6 +269,7 @@ export const data = [
  },
  {
   id: 30,
+  image: sampleproperty6,
   location: "Istanbul, Turkey",
   date: "2023-08-09",
   price: 1000,
@@ -241,6 +278,7 @@ export const data = [
  },
  {
   id: 31,
+  image: sampleproperty1,
   location: "Santorini, Greece",
   date: "2023-09-18",
   price: 2500,
@@ -249,6 +287,7 @@ export const data = [
  },
  {
   id: 32,
+  image: sampleproperty2,
   location: "Miami, USA",
   date: "2023-10-12",
   price: 2000,
@@ -257,6 +296,7 @@ export const data = [
  },
  {
   id: 33,
+  image: sampleproperty3,
   location: "Reykjavik, Iceland",
   date: "2023-11-26",
   price: 700,
@@ -265,6 +305,7 @@ export const data = [
  },
  {
   id: 34,
+  image: sampleproperty4,
   location: "Vancouver, Canada",
   date: "2023-12-15",
   price: 1300,
@@ -273,6 +314,7 @@ export const data = [
  },
  {
   id: 35,
+  image: sampleproperty5,
   location: "Rio de Janeiro, Brazil",
   date: "2023-01-04",
   price: 800,
@@ -281,6 +323,7 @@ export const data = [
  },
  {
   id: 36,
+  image: sampleproperty6,
   location: "Sydney, Australia",
   date: "2023-02-11",
   price: 2200,
@@ -289,6 +332,7 @@ export const data = [
  },
  {
   id: 37,
+  image: sampleproperty1,
   location: "Paris, France",
   date: "2023-03-22",
   price: 1500,
@@ -297,6 +341,7 @@ export const data = [
  },
  {
   id: 38,
+  image: sampleproperty2,
   location: "Bali, Indonesia",
   date: "2023-04-29",
   price: 900,
@@ -305,6 +350,7 @@ export const data = [
  },
  {
   id: 39,
+  image: sampleproperty3,
   location: "Madrid, Spain",
   date: "2023-05-23",
   price: 1100,
@@ -313,6 +359,7 @@ export const data = [
  },
  {
   id: 40,
+  image: sampleproperty4,
   location: "Dubai, UAE",
   date: "2023-06-30",
   price: 2800,
@@ -321,6 +368,7 @@ export const data = [
  },
  {
   id: 41,
+  image: sampleproperty5,
   location: "Los Angeles, USA",
   date: "2023-07-21",
   price: 2500,
@@ -329,6 +377,7 @@ export const data = [
  },
  {
   id: 42,
+  image: sampleproperty6,
   location: "Stockholm, Sweden",
   date: "2023-08-11",
   price: 700,
@@ -337,6 +386,7 @@ export const data = [
  },
  {
   id: 43,
+  image: sampleproperty1,
   location: "Tulum, Mexico",
   date: "2023-09-23",
   price: 1500,
@@ -345,6 +395,7 @@ export const data = [
  },
  {
   id: 44,
+  image: sampleproperty2,
   location: "Bangkok, Thailand",
   date: "2023-10-14",
   price: 400,
@@ -353,6 +404,7 @@ export const data = [
  },
  {
   id: 45,
+  image: sampleproperty3,
   location: "Napa Valley, USA",
   date: "2023-11-27",
   price: 2000,
@@ -361,6 +413,7 @@ export const data = [
  },
  {
   id: 46,
+  image: sampleproperty4,
   location: "Sydney, Australia",
   date: "2023-12-17",
   price: 1800,
@@ -369,6 +422,7 @@ export const data = [
  },
  {
   id: 47,
+  image: sampleproperty5,
   location: "Rio de Janeiro, Brazil",
   date: "2023-01-19",
   price: 950,
@@ -377,6 +431,7 @@ export const data = [
  },
  {
   id: 48,
+  image: sampleproperty6,
   location: "Barcelona, Spain",
   date: "2023-02-26",
   price: 1200,
@@ -385,6 +440,7 @@ export const data = [
  },
  {
   id: 49,
+  image: sampleproperty1,
   location: "Rome, Italy",
   date: "2023-03-30",
   price: 1700,
@@ -393,6 +449,7 @@ export const data = [
  },
  {
   id: 50,
+  image: sampleproperty2,
   location: "Auckland, NZ",
   date: "2023-04-12",
   price: 1200,
@@ -401,6 +458,7 @@ export const data = [
  },
  {
     id: 51,
+    image: sampleproperty3,
     location: "Bali, Indonesia",
     date: "2023-05-15",
     price: 800,
@@ -409,6 +467,7 @@ export const data = [
   },
   {
     id: 52,
+    image: sampleproperty4,
     location: "New York, USA",
     date: "2023-08-01",
     price: 1500,
@@ -417,6 +476,7 @@ export const data = [
   },
   {
     id: 53,
+    image: sampleproperty5,
     location: "Paris, France",
     date: "2023-06-30",
     price: 1200,
@@ -425,6 +485,7 @@ export const data = [
   },
   {
     id: 54,
+    image: sampleproperty6,
     location: "Bangkok, Thailand",
     date: "2023-07-10",
     price: 700,
@@ -433,6 +494,7 @@ export const data = [
   },
   {
     id: 55,
+    image: sampleproperty1,
     location: "Amsterdam, Netherlands",
     date: "2023-09-05",
     price: 1300,
@@ -441,6 +503,7 @@ export const data = [
   },
   {
     id: 56,
+    image: sampleproperty2,
     location: "Tokyo, Japan",
     date: "2023-05-25",
     price: 900,
@@ -449,6 +512,7 @@ export const data = [
   },
   {
     id: 57,
+    image: sampleproperty3,
     location: "Cape Town, South Africa",
     date: "2023-08-20",
     price: 1100,
@@ -457,6 +521,7 @@ export const data = [
   },
   {
     id: 58,
+    image: sampleproperty4,
     location: "San Francisco, USA",
     date: "2023-07-05",
     price: 1400,
@@ -465,6 +530,7 @@ export const data = [
   },
   {
     id: 59,
+    image: sampleproperty5,
     location: "London, UK",
     date: "2023-09-10",
     price: 1500,
@@ -473,6 +539,7 @@ export const data = [
   },
   {
     id: 60,
+    image: sampleproperty6,
     location: "Rome, Italy",
     date: "2023-07-15",
     price: 1000,
@@ -481,6 +548,7 @@ export const data = [
   },
   {
     id: 61,
+    image: sampleproperty1,
     location: "Dubai, UAE",
     date: "2023-06-05",
     price: 2000,
@@ -489,6 +557,7 @@ export const data = [
   },
   {
     id: 62,
+    image: sampleproperty2,
     location: "Barcelona, Spain",
     date: "2023-08-25",
     price: 1200,
@@ -497,6 +566,7 @@ export const data = [
   },
   {
     id: 63,
+    image: sampleproperty3,
     location: "Berlin, Germany",
     date: "2023-09-20",
     price: 1000,
@@ -505,6 +575,7 @@ export const data = [
   },
   {
     id: 64,
+    image: sampleproperty4,
     location: "Phuket, Thailand",
     date: "2023-07-10",
     price: 900,
@@ -513,6 +584,7 @@ export const data = [
   },
   {
     id: 65,
+    image: sampleproperty5,
     location: "Los Angeles, USA",
     date: "2023-08-15",
     price: 1200,
@@ -521,6 +593,7 @@ export const data = [
   },
   {
     id: 66,
+    image: sampleproperty6,
     location: "Florence, Italy",
     date: "2023-06-25",
     price: 1000,
@@ -529,6 +602,7 @@ export const data = [
   },
   {
     id: 67,
+    image: sampleproperty1,
     location: "Marrakech, Morocco",
     date: "2023-09-05",
     price: 800,
@@ -537,6 +611,7 @@ export const data = [
   },
   {
     id: 68,
+    image: sampleproperty2,
     location: "Hawaii, USA",
     date: "2023-07-20",
     price: 1500,
@@ -545,6 +620,7 @@ export const data = [
   },
   {
     id: 69,
+    image: sampleproperty3,
     location: "Athens, Greece",
     date: "2023-08-01",
     price: 1100,
@@ -553,6 +629,7 @@ export const data = [
   },
   {
     id: 70,
+    image: sampleproperty4,
     location: "Dublin, Ireland",
     date: "2023-09-10",
     price: 900,
@@ -561,6 +638,7 @@ export const data = [
   },
   {
     id: 71,
+    image: sampleproperty5,
     location: "Munich, Germany",
     date: "2023-06-30",
     price: 1000,
@@ -569,6 +647,7 @@ export const data = [
   },
   {
     id: 72,
+    image: sampleproperty6,
     location: "Seoul, South Korea",
     date: "2023-07-15",
     price: 800,
@@ -577,6 +656,7 @@ export const data = [
   },
   {
     id: 73,
+    image: sampleproperty1,
     location: "Toronto, Canada",
     date: "2023-09-05",
     price: 1200,
@@ -585,6 +665,7 @@ export const data = [
   },
   {
     id: 74,
+    image: sampleproperty2,
     location: "Venice, Italy",
     date: "2023-06-05",
     price: 1300,
@@ -593,6 +674,7 @@ export const data = [
   },
   {
     id: 75,
+    image: sampleproperty3,
     location: "Rio de Janeiro, Brazil",
     date: "2023-08-20",
     price: 1500,
@@ -601,6 +683,7 @@ export const data = [
   },
   {
     id: 76,
+    image: sampleproperty4,
     location: "Vienna, Austria",
     date: "2023-07-05",
     price: 1100,
@@ -609,6 +692,7 @@ export const data = [
   },
   {
     id: 77,
+    image: sampleproperty5,
     location: "Cape Cod, USA",
     date: "2023-06-25",
     price: 800,
@@ -617,6 +701,7 @@ export const data = [
   },
   {
     id: 78,
+    image: sampleproperty6,
     location: "Krakow, Poland",
     date: "2023-08-25",
     price: 1000,
@@ -625,6 +710,7 @@ export const data = [
   },
   {
     id: 79,
+    image: sampleproperty1,
     location: "Santorini, Greece",
     date: "2023-07-20",
     price: 1200,
@@ -633,6 +719,7 @@ export const data = [
   },
   {
     id: 80,
+    image: sampleproperty2,
     location: "San Diego, USA",
     date: "2023-09-20",
     price: 1400,
@@ -641,6 +728,7 @@ export const data = [
   },
   {
     id: 81,
+    image: sampleproperty3,
     location: "Edinburgh, Scotland",
     date: "2023-05-30",
     price: 1000,
@@ -649,6 +737,7 @@ export const data = [
   },
   {
     id: 82,
+    image: sampleproperty4,
     location: "Quebec City, Canada",
     date: "2023-06-20",
     price: 900,
@@ -657,6 +746,7 @@ export const data = [
   },
   {
     id: 83,
+    image: sampleproperty5,
     location: "Krabi, Thailand",
     date: "2023-07-10",
     price: 800,
@@ -665,6 +755,7 @@ export const data = [
   },
   {
     id: 84,
+    image: sampleproperty6,
     location: "Barcelona, Spain",
     date: "2023-06-15",
     price: 1100,
@@ -673,6 +764,7 @@ export const data = [
   },
   {
     id: 85,
+    image: sampleproperty1,
     location: "Amsterdam, Netherlands",
     date: "2023-08-05",
     price: 1300,
@@ -681,6 +773,7 @@ export const data = [
   },
   {
     id: 86,
+    image: sampleproperty2,
     location: "Kyoto, Japan",
     date: "2023-09-10",
     price: 1200,
@@ -689,6 +782,7 @@ export const data = [
   },
   {
     id: 87,
+    image: sampleproperty3,
     location: "Dubrovnik, Croatia",
     date: "2023-07-20",
     price: 1400,
@@ -697,6 +791,7 @@ export const data = [
   },
   {
     id: 88,
+    image: sampleproperty4,
     location: "Bali, Indonesia",
     date: "2023-06-30",
     price: 1000,
@@ -705,6 +800,7 @@ export const data = [
   },
   {
     id: 89,
+    image: sampleproperty5,
     location: "Savannah, USA",
     date: "2023-08-15",
     price: 800,
@@ -713,6 +809,7 @@ export const data = [
   },
   {
     id: 90,
+    image: sampleproperty6,
     location: "Paris, France",
     date: "2023-09-05",
     price: 1500,
@@ -721,6 +818,7 @@ export const data = [
   },
   {
     id: 91,
+    image: sampleproperty1,
     location: "Vancouver, Canada",
     date: "2023-07-15",
     price: 1000,
@@ -729,6 +827,7 @@ export const data = [
   },
   {
     id: 92,
+    image: sampleproperty2,
     location: "Budapest, Hungary",
     date: "2023-08-25",
     price: 900,
@@ -737,6 +836,7 @@ export const data = [
   },
   {
     id: 93,
+    image: sampleproperty3,
     location: "San Francisco, USA",
     date: "2023-06-25",
     price: 1200,
@@ -745,6 +845,7 @@ export const data = [
   },
   {
     id: 94,
+    image: sampleproperty4,
     location: "Kruger National Park, South Africa",
     date: "2023-09-20",
     price: 1600,
@@ -753,6 +854,7 @@ export const data = [
   },
   {
     id: 95,
+    image: sampleproperty5,
     location: "Sicily, Italy",
     date: "2023-07-10",
     price: 1100,
@@ -761,6 +863,7 @@ export const data = [
   },
   {
     id: 96,
+    image: sampleproperty6,
     location: "Havana, Cuba",
     date: "2023-08-20",
     price: 1000,
@@ -769,6 +872,7 @@ export const data = [
   },
   {
     id: 97,
+    image: sampleproperty1,
     location: "New Orleans, USA",
     date: "2023-06-20",
     price: 1100,
@@ -777,6 +881,7 @@ export const data = [
   },
   {
     id: 98,
+    image: sampleproperty2,
     location: "Tokyo, Japan",
     date: "2023-07-30",
     price: 1300,
@@ -785,6 +890,7 @@ export const data = [
   },
   {
     id: 99,
+    image: sampleproperty3,
     location: "Cape Town, South Africa",
     date: "2023-09-15",
     price: 1500,
@@ -793,10 +899,11 @@ export const data = [
   },
   {
     id: 100,
+    image: sampleproperty4,
     location: "Rio de Janeiro, Brazil",
     date: "2023-08-10",
     price: 1200,
     name: "Spacious Apartment in Ipanema",
     type: "Apartment"
   },
-];
+]

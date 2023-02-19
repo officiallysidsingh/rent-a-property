@@ -14,7 +14,7 @@ export default function FilterType({ types, type, setType }) {
   return (
     <Box sx={{ minWidth: 120 }}>
       <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label">Property Type</InputLabel>
+        <InputLabel>Property Type</InputLabel>
         <Select
           value={type}
           label="Property Type"

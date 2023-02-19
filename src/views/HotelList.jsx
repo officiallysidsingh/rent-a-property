@@ -9,7 +9,6 @@ import {data} from '../constants/data.js';
 export default function HotelList({ filteredDataIds, submit }) {
 
   const [filteredCardsData, setFilteredCardsData] = useState([]);
-  const [result, setResult] = useState('');
 
   
   useEffect(() => {
@@ -19,7 +18,7 @@ export default function HotelList({ filteredDataIds, submit }) {
         setFilteredCardsData(filteredData);
       }
     }
-  }, [submit]);
+  }, [filteredDataIds, submit]);
   
   return (
       <>

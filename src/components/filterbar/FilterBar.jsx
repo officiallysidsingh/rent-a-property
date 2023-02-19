@@ -26,6 +26,16 @@ export default function FilterBar({ setFilteredDataIds, setSubmit }) {
   const generateLocationDataForAutocomplete = () => {
     return [...new Set(data.map((item) => item.location))];
   }
+
+  const formatDate = (date) => {
+    if (date) {
+      const year = date.getFullYear();
+      const month = (date.getMonth() + 1).toString().padStart(2, '0'); // add leading zero if necessary
+      const day = date.getDate().toString().padStart(2, '0'); // add leading zero if necessary
+      return `${year}-${month}-${day}`;
+    }
+    return '';
+  };
     
   //To handle form submission
   const handleSubmit = (event) => {
@@ -42,11 +52,7 @@ export default function FilterBar({ setFilteredDataIds, setSubmit }) {
 
         if(date !== null && price !== '' && type !== ''){
           const itemDate = new Date(item.date);
-            if (item.price <= price && 
-              itemDate.getDate() <= date.getDate() ||
-              itemDate.getMonth() <= date.getMonth() ||
-              itemDate.getFullYear() <= date.getFullYear() &&
-              item.type === type) {
+          if(item.type === type && item.price <= price && itemDate <= new Date(formatDate(date))){
               return item;
             }
         }
@@ -55,10 +61,7 @@ export default function FilterBar({ setFilteredDataIds, setSubmit }) {
 
         else if(date !== null && price !== '' && type === ''){
           const itemDate = new Date(item.date);
-          if(itemDate.getDate() <= date.getDate() ||
-             itemDate.getMonth() <= date.getMonth() ||
-             itemDate.getFullYear() <= date.getFullYear() &&
-             item.price <= price){
+          if(itemDate <= new Date(formatDate(date)) && item.price <= price){
             return item;
           }
         }
@@ -67,10 +70,7 @@ export default function FilterBar({ setFilteredDataIds, setSubmit }) {
 
         else if(date !== null && type !== '' && price === ''){
           const itemDate = new Date(item.date);
-          if (itemDate.getDate() <= date.getDate() ||
-              itemDate.getMonth() <= date.getMonth() ||
-              itemDate.getFullYear() <= date.getFullYear() &&
-              item.type === type) {
+          if (itemDate <= new Date(formatDate(date)) && item.type === type) {
             return item;
           }
         }
@@ -103,9 +103,7 @@ export default function FilterBar({ setFilteredDataIds, setSubmit }) {
 
         else if(price === '' && type === '' && date !== null){
           const itemDate = new Date(item.date);
-          if (itemDate.getDate() <= date.getDate() ||
-              itemDate.getMonth() <= date.getMonth() ||
-              itemDate.getFullYear() <= date.getFullYear()) {
+          if (itemDate <= new Date(formatDate(date))) {
             return item;
           }
         }

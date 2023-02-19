@@ -9,6 +9,7 @@ import HotelList from './views/HotelList.jsx';
 import { Container } from '@mui/material';
 
 function App() {
+  
   //Handling Whole App State
   const [filteredDataIds, setFilteredDataIds] = useState([]);
   const[submit, setSubmit] = useState(false);
